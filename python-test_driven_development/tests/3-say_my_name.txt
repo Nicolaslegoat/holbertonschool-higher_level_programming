@@ -17,19 +17,19 @@ TypeError: first_name must be a string
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name = (None, "White")
+>>> say_my_name = (None, "Stark")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name = ("Walter", None)
+>>> say_my_name = ("Tony", None)
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name = (["Walter"], "White")
+>>> say_my_name = (["Tony"], "Stark")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name = ("Walter", ["White"])
+>>> say_my_name = ("Tony", ["Stark"])
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
@@ -37,10 +37,10 @@ TypeError: last_name must be a string
 Traceback (most recent call last):
 TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
->>> say_my_name = (1, "White")
+>>> say_my_name = (1, "Stark")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name = ("Walter", 1)
+>>> say_my_name = ("Tony", 1)
 Traceback (most recent call last):
 TypeError: last_name must be a string
