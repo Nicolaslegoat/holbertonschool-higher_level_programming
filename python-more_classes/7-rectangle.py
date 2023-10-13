@@ -58,14 +58,20 @@ class Rectangle:
             return (self.__height * 2) + (self.__width * 2)
 
     def __str__(self):
-        str_rec = ''
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        rect_str = ""
+        for i in range(self.__height):
+            rect_str += str(self.print_symbol) * self.__width + "\n"
+        return rect_str[:-1]
+        """str_rec = ''
         if self.__height != 0 and self.__width != 0:
             for i in range(self.__height):
                 if i == self.__height - 1:
                     str_rec += Rectangle.print_symbol * self.__width
                 else:
                     str_rec += Rectangle.print_symbol * self.__width + '\n'
-        return str_rec
+        return str_rec"""
 
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
