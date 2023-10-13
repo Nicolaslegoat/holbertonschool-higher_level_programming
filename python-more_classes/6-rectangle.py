@@ -75,4 +75,3 @@ class Rectangle:
 
     def get_number_of_instances(self):
         return Rectangle.number_of_instances
-        
