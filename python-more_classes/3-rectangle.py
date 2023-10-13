@@ -54,7 +54,7 @@ class Rectangle:
         str_rectangle = ''
         if self.__height != 0 and self.__width != 0:
             for i in range(self.__height):
-                if i == self.__height -1:
+                if i == self.__height - 1:
                     str_rectangle += '#' * self.__width
                 else:
                     str_rectangle += '#' * self.__width + '\n'
