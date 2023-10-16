@@ -1,3 +1,7 @@
 #!/usr/bin/python3
+"""module is empty"""
+
+
 def lookup(obj):
-    return [attr for attr in dir(obj) if callable(getattr(obj, attr)) or not attr.startswith('__')]
+    """ returns the list of available attributes and methods of an object"""
+    return dir(obj)
