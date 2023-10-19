@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 def read_file(filename=""):
-    f = open('workfile', 'w', encoding="utf-8")
-    f.read()
+    with open(filename, 'r', encoding="utf-8") as file:
+        read_data = file.read()
+    print(read_data)
