@@ -95,3 +95,7 @@ class Rectangle(Base):
         of the Rectangle instance.
         """
         return self.__width * self.__height
+
+    def display(self):
+       for i in range(self.__height):
+           print("#" * self.__width)
