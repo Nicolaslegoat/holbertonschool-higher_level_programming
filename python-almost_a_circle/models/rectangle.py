@@ -98,8 +98,10 @@ class Rectangle(Base):
 
     def display(self):
         """a method that print the rectangle"""
+        for i in range(self.__y):
+            print()
         for i in range(self.__height):
-            print("#" * self.__width)
+            print(" " * self.x + "#" * self.__width)
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}"\
