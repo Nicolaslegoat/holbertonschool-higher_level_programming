@@ -20,15 +20,15 @@ class Square(Rectangle):
         """
         That retrieves the size of the square sides
         """
-        return self.height
+        return self.width
 
     @size.setter
     def size(self, value):
         """
         Method to defines the size of the square sides
         """
-        self.height = value
         self.width = value
+        self.height = value
 
     def __str__(self):
         """
@@ -36,3 +36,4 @@ class Square(Rectangle):
         """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
                                                  self.y, self.size)
+
