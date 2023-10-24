@@ -34,5 +34,5 @@ class Square(Rectangle):
         """
         That return a representation of the square
         """
-        return ("[Square] ({}) {}/{} - {}"
-              .format(self.id, self.x, self.y, self.size))
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
+                                                 self.y, self.size)
