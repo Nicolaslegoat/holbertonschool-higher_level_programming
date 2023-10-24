@@ -140,12 +140,7 @@ class Rectangle(Base):
                 self.__y = kwargs["y"]
 
     def to_dictionnary(self):
-        """
-        Convert the Rectangle instance into a dictionary.
-
-        Return:
-            dict: a dictionary representation of the Rectangle instance.
-        """
+        """Convert the Rectangle instance into a dictionary."""
         return {"id": self.id,
                 "width": self.__width,
                 "height": self.__height,
