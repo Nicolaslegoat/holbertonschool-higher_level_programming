@@ -139,7 +139,7 @@ class Rectangle(Base):
             if "y" in kwargs:
                 self.__y = kwargs["y"]
 
-    def to_dictionnary(self):
+    def to_dictionary(self):
         """Convert the Rectangle instance into a dictionary."""
         return {"id": self.id,
                 "width": self.__width,
