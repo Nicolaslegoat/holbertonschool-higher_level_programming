@@ -32,4 +32,3 @@ class Base:
             dict_list = [obj.to_dictionary() for obj in list_objs]
             json_string = cls.to_json_string(dict_list)
             file.write(json_string)
-        
