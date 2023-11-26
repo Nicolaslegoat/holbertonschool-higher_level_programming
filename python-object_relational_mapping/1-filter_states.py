@@ -8,10 +8,6 @@ import sys
 
 if __name__ == "__main__":
 
-    if len(sys.argv) != 4:
-        print("Usage: {} <username> <password> <database>".format(sys.argv[0]))
-        exit(1)
-
     database = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -23,7 +19,7 @@ if __name__ == "__main__":
     cursor = database.cursor()
 
     cursor.execute("SELECT * FROM states WHERE \
-                   name LIKE 'N%' ORDER BY states.id")
+                   name LIKE BINARY 'N%' ORDER BY states.id")
 
     for row in cursor.fetchall():
         print(row)
