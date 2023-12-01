@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Adds the State object “Louisiana” to the database `hbtn_0e_6_usa`.
 """
@@ -26,6 +27,7 @@ if __name__ == "__main__":
 
     for city, state in soluce:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
-    session.commit()
 
+    session.commit()
+    
     session.close()
